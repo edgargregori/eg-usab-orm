@@ -1,0 +1,22 @@
+
+	/* Logica muy complicada de generar categorias de idiomas
+	$category = Category::get();
+	$count= 1;
+	factory(Language::class, 4)->create()->each(
+		function ($language) use($category){
+		//$category = ;
+		$language->categories()->sync(1);
+		$count = $count + 1;
+	});
+	*/
+
+
+
+		// Factory Comment
+	$posts = Post::get();//$posts->first()->id,$posts->last()->id)
+	dd(Post::inRandomOrder()->get()->first()->id);
+	//$autor_id = rand(3,6);
+	//$post_id = rand(3,6);
+	//$posts_random = $posts->random(rand(3,6));
+	//var_dump($posts->first()->id);
+	//var_dump($posts->last()->id);
