@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Models\Posts\Post;
 
 use App\Models\Languages\Language;
@@ -14,6 +15,8 @@ use App\Models\Publishes\Publish;
 use App\User;
 
 
+=======
+>>>>>>> f4d887ac00fcaba6069cc713b52ec7c9f44fec95
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +31,7 @@ use App\User;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::get('/categories', function () {
     return Categorie::get();
@@ -83,3 +87,5 @@ Route::get('/users', function () {
 });
 
 
+=======
+>>>>>>> f4d887ac00fcaba6069cc713b52ec7c9f44fec95
