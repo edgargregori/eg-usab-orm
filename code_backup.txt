@@ -1,6 +1,33 @@
 
 
+/************************/
+ubuntu@ip-172-31-84-242:/var/www/html/your-project$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
 
+Changes to be committed:
+
+	new file:   database/migrations/2018_02_01_235513_create_bears_table.php
+	new file:   routes/.api.php.swp
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both added:      app/Providers/AppServiceProvider.php
+	both added:      app/User.php
+	both added:      database/factories/UserFactory.php
+	both added:      database/migrations/2014_10_12_000000_create_users_table.php
+	both added:      database/seeds/DatabaseSeeder.php
+	both added:      readme.md
+	both added:      routes/web.php
+
+
+
+/************************/
 	public function scopeCastellano($query) {
 		return  $query
 			->where("categorie_id", "=", 1);//1: castellano-espa√a, 2: castellano-bolivia, 3: castellano-mexico, 4: english-usa

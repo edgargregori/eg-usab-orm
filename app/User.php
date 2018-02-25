@@ -15,11 +15,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-<<<<<<< HEAD
+//<<<<<<< HEAD
         'first_name', 'last_name', 'email', 'password',
-=======
-        'name', 'email', 'password',
->>>>>>> f4d887ac00fcaba6069cc713b52ec7c9f44fec95
+//=======
+//        'name', 'email', 'password',
+//>>>>>>> f4d887ac00fcaba6069cc713b52ec7c9f44fec95
     ];
 
     /**
@@ -30,11 +30,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-<<<<<<< HEAD
 
 	public function setPasswordAttribute($password){
 	  $this->attributes['password']=\Illuminate\Support\Facades\Hash::make($password);
 	}
-=======
->>>>>>> f4d887ac00fcaba6069cc713b52ec7c9f44fec95
 }
