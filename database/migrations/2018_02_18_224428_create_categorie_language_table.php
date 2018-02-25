@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategoryLanguageTable extends Migration
+class CreateCategorieLanguageTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateCategoryLanguageTable extends Migration
      */
     public function up()
     {
-        Schema::create('category_language', function (Blueprint $table) {
+        Schema::create('categorie_language', function (Blueprint $table) {
             $table->unsignedInteger('categorie_id');
             $table->unsignedInteger('language_id');
 	    $table->foreign('categorie_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
 	    $table->foreign('language_id')->references('id')->on('languages')->onDelete('cascade')->onUpdate('cascade');
             $table->string('label');
             $table->string('slug');
+            $table->string('description');
         });
     }
 
@@ -30,6 +31,6 @@ class CreateCategoryLanguageTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_language');
+        Schema::dropIfExists('categorie_language');
     }
 }

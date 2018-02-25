@@ -17,8 +17,10 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('autor_id');
 	    $table->foreign('autor_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->unsignedInteger('publishes_id');
-	    $table->foreign('publishes_id')->references('id')->on('publishes')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('publishe_id');
+	    $table->foreign('publishe_id')->references('id')->on('publishes')->onDelete('cascade')->onUpdate('cascade');
+            $table->unsignedInteger('categorie_id');
+	    $table->foreign('categorie_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamp('pubish_at')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

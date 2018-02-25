@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-//use Category;
+//use Categorie;
 
 class CategoriesTableSeeder extends Seeder
 {
@@ -13,11 +13,11 @@ class CategoriesTableSeeder extends Seeder
     public function run()
     {
         // Pivot-label:'Castellano', 'Francais', 'Deutsch', 'English', 
-	//factory(Category::class, 4)->create();
-	  App\Models\Categories\Category::create(); // 1 -> Castellano españa
-	  App\Models\Categories\Category::create();//2 castellano de Bolivia'
-	  App\Models\Categories\Category::create();//3 castellano de Mexico'
-	  App\Models\Categories\Category::create(); // 4 ingles de United States of America
+	//factory(Categorie::class, 4)->create();
+	  App\Models\Categories\Categorie::create(); // 1 -> Castellano españa
+	  App\Models\Categories\Categorie::create();//2 castellano de Bolivia'
+	  App\Models\Categories\Categorie::create();//3 castellano de Mexico'
+	  App\Models\Categories\Categorie::create(); // 4 ingles de United States of America
 	
     }
 }

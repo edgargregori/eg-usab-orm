@@ -1,4 +1,21 @@
 
+
+
+	public function scopeCastellano($query) {
+		return  $query
+			->where("categorie_id", "=", 1);//1: castellano-espa√a, 2: castellano-bolivia, 3: castellano-mexico, 4: english-usa
+	}
+
+	// 1 = espa√±ol, 2 = english.
+	public function scopePostsLanguage($query, $language_id) {
+			dd($query, $language_id);
+	 	$categorie_id = 1;	
+		return  $query
+			->where("id", "=", $categorie_id)
+			->where("category_language_label", "=", $language_id);//1: castellano-espa√a, 2: castellano-bolivia, 3: castellano-mexico, 4: english-usa
+	}
+
+
 	/* Logica muy complicada de generar categorias de idiomas
 	$category = Category::get();
 	$count= 1;
