@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+
+	public function get_post_web(Post $post)
+	{
+		//$model = $post->toArray();
+		$model = $post->get()->toArray();
+		return view('app', ['model' => $model]);
+	}
+
     /**
      * Display a listing of the resource.
      *

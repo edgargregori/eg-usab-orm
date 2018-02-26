@@ -28,6 +28,9 @@ use App\User;
 |
 */
 
+Route::get('/get-posts', 'PostsController@get_post_web');
+//Route::get('/get-post/{post}', 'PostsController@get_post_web');
+
 Route::get('/', function () {
     return view('welcome');
 });

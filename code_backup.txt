@@ -1,4 +1,24 @@
 
+/****************************
+> node lib/install.js
+
+  ⚠ The `/var/www/html/your-project/node_modules/mozjpeg/vendor/cjpeg` binary doesn't seem to work correctly
+  ⚠ mozjpeg pre-build test failed
+  ℹ compiling from source
+  ✖ Error: autoreconf -fiv && ./configure --disable-shared --disable-dependency-tracking --with-jpeg8  --prefix="/var/www/html/your-project/node_modules/mozjpeg/vendor" --bindir="/var/www/html/your-project/node_modules/mozjpeg/vendor" --libdir="/var/www/html/your-project/node_modules/mozjpeg/vendor" && make -j1 && make install -j1
+Command failed: autoreconf -fiv
+/bin/sh: 1: autoreconf: not found
+
+    at ChildProcess.exithandler (child_process.js:272:12)
+    at ChildProcess.emit (events.js:127:13)
+    at maybeClose (internal/child_process.js:933:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
+
+
+/*********************/
+        "bootstrap-sass": "^3.3.7",
+        "lodash": "^4.17.4",
+        "jquery": "^3.2",
 
 /************************/
 ubuntu@ip-172-31-84-242:/var/www/html/your-project$ git status
